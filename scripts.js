@@ -1,11 +1,20 @@
 $(document).ready(function() {
   $("div#dog").click(function() {
     $(this).css("background-image", "none");
+    $(this).html( "<p id='tabby'>What about a cute tiny tabby?</p>").addClass("text-center tiny").css("padding-top", "200px");
+    $(".tiny").click(function() {
+      $(this).css("background-image", "url('img/cat.jpg')");
+      $("#tabby").remove();
+    });
   });
 
   $("div#cat").click(function() {
     $(this).css("background-image", "none")
-    $(this).add( "<p> What about fancy pugs?</p>");
+    $(this).html( "<p id='fancy-pug'>What about a fancy pug??!@??!@</p>").addClass("text-center fancy").css("padding-top", "200px");
+    $(".fancy").click(function() {
+      $(this).css("background-image", "url('img/pug.jpg')");
+      $("#fancy-pug").remove();
+    });
   });
 
  $("#blanks form").submit(function(event) {

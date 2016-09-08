@@ -8,6 +8,7 @@ h1 {
   background-image: url("img/pug.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  color: tomato;
 }
 
 #cat {
