@@ -1,0 +1,24 @@
+h1 {
+  margin-bottom: 100px;
+}
+
+#dog {
+  height: 500px;
+  width: 100%;
+  background-image: url("img/pug.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#cat {
+  height: 500px;
+  width: 100%;
+  background-image: url("img/cat.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: tomato;
+}
+
+#story {
+  display: none;
+}
